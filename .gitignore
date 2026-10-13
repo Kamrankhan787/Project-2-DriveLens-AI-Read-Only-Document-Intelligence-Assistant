@@ -6,13 +6,44 @@ __pycache__/
 .Python
 env/
 venv/
+ENV/
+env.bak/
+venv.bak/
+backend/venv/
 .pytest_cache/
 .coverage
 htmlcov/
 
-# Local configuration and credentials
+# Environment and secrets - CRITICAL SECURITY RULE
 .env
 .env.local
-token.json
+.env.*.local
+*.pem
 credentials.json
+token.json
 client_secrets.json
+
+# Node & Next.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+frontend/.next/
+frontend/out/
+frontend/build/
+.next/
+out/
+build/
+dist/
+
+# Operating System & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local Git metadata backup
+.git-root-backup/
